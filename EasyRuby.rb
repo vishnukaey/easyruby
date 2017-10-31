@@ -2,6 +2,7 @@ require 'open-uri'
 require 'nokogiri'
 
 class EasyRuby
+
 	def self.download_images
 		p "Enter URL"
 		url_string = gets.chomp
@@ -13,5 +14,11 @@ class EasyRuby
   		end
   		p "Downloading successful!"
   	end
-  	self.download_images
+
+  	def self.main
+  		self.download_images
+  	end
+
+  	self.main
+  
   end
